@@ -36,13 +36,17 @@ function getLocation()
         console.log(site)
         // document.getElementById("demo").innerHTML = site;
         showMap();
+        document.getElementById("address").value = latitude+","+longitude;
     }
+    
 }
 function showMap(){
     document.getElementById("map").style.display = "block";
     document.getElementById("map").innerHTML = "<iframe width=600 height=450 style=border:0 loading=lazy allowfullscreen referrerpolicy=no-referrer-when-downgrade src=https://www.google.com/maps/embed/v1/place?key=AIzaSyCijb60T6M4cgqiUTlH3R5pTa9DKuFyKQc&q="+latitude+","+longitude+"> </iframe>";
+
 }
 function showCookie(){
     var x = document.cookie;
     document.getElementById("test").innerHTML = x;
+    document.getElementById("hello").innerHTML = "Hello World";
 }

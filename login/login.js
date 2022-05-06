@@ -18,5 +18,5 @@ function login(){
 function setCookies(username,password){
     document.cookie = "username="+username;
     document.cookie = "password="+password;
-    window.alert("dsqwd"+document.cookie);
+    // window.alert("dsqwd"+document.cookie);
 }

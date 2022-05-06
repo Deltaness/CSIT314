@@ -30,7 +30,7 @@
     <div class="row">
         <div class="left-part">
             <div class="card">
-                <h2>Please fill in the information below in detail.</h2>
+                <h2>Please fill in the information below in detail to get help.</h2>
                 <label for="name">Name: </label>&nbsp;&nbsp;
                 <input type="text" id="name" name="name"/><br><br>
                 <label for="phone">Phone number: </label>&nbsp;&nbsp;
@@ -44,7 +44,7 @@
 
 
                 <label for="address">Address: </label>&nbsp;&nbsp;
-                <input type="text" id="address" name="address"/><button class="getLocation" onclick="getLocation()">Use current location</button><br><br>
+                <input type="text" id="address" name="address" /><button class="getLocation" onclick="getLocation()">Use current location</button><br><br>
                 <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d26336.71545039154!2d150.87340933061785!3d-34.39907274217549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m3!3m2!1d-34.4100124!2d150.8958314!4m5!1s0x6b131971e23b2943%3A0x28106b564503fe41!2z5LyN5Lym6LSh5aSn5a2mIE5vcnRoZmllbGRzIEF2ZSwgV29sbG9uZ29uZyBOU1cgMjUyMg!3m2!1d-34.405403899999996!2d150.87842999999998!5e0!3m2!1szh-CN!2sau!4v1651278694401!5m2!1szh-CN!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
                 <!-- AIzaSyCijb60T6M4cgqiUTlH3R5pTa9DKuFyKQc -->
                 <div id="map" style="display: none;">
@@ -58,7 +58,7 @@
                     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCijb60T6M4cgqiUTlH3R5pTa9DKuFyKQc&q=-34.416106,150.889156">
                     </iframe> -->
                 </div>
-                <label for="choose">Which of your vehicles needs assistance?(Please fill in the license plate number.)</label>&nbsp;&nbsp;
+                <label for="choose">Which of your vehicles needs assistance<br>(Please fill in the license plate number.)</label>&nbsp;&nbsp;
                 <input for="text" id="car" name="car"><br><br>
                 <label>Issue Type: </label>
                 <select>
@@ -69,9 +69,9 @@
                     <option value="fuel">Emergency fuel delivery</option>
                     <option value="other">Others</option>
                 </select><br><br>
-                <div>If the above incident types do not cover your current situation, please note your situation below.</div><br>
-                <textarea style="width: 300px" rows="4"></textarea><br><br>
-                <label>Price: $<s> ***</s></label><br><br>
+                <div>If the above incident types do not cover your current situation<br> please note your situation below.</div><br>
+                <textarea style="width: 300px;resize: none;" rows="4"></textarea><br><br>
+                <!-- <label>Price: $<s> ***</s></label><br><br> -->
                 <button>Submit</button>
             </div>
         </div>
@@ -79,13 +79,13 @@
         <div class="right-part">
             <div class="cd">
                <h2 id="test">About Me</h2>
-               <p>(Some introduction!!)</p>
+               <p id="hello">(Some introduction!!)</p>
             </div>
         </div>
     </div>
 
 <div class="footer">
-    (Company name)
+    (CSIT314)
 </div>
 
 </body>
