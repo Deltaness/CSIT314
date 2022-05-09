@@ -1,21 +1,108 @@
+body{
+    background-image: url(../image/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.back{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+button{
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+}
+.form{
+    text-align: center;
+}
 .earn-form{
     width:500px;
     padding: 25px;
-    margin:30px;
+    margin:30px auto;
     border: 1px solid #ccc;
     border-radius:30px;
     box-shadow: 5px 5px gray;
     background-color: #f2f2f2;
     display:inline-block;
+    text-align: center;
 }
 h2{
     text-align: center;
+}
+.earnper{
+    text-align: left;
+    margin-left: 100px;
+}
+.earnper label{
+    line-height:50px
 }
 .footer{
     padding:20px;
     text-align: center;
     margin-top: 20px;
 }
-body{
+
+
+#container {
+    height: 400px;
+    min-width: 310px;
+    width: 550px;
+    margin: 0 auto;
+}
+
+.inner{
+    width: 500px;
+    margin: 10px auto 0 auto;
+    padding-top: 50px;
+}
+.innert{
+    display: flex;
+    height: 40px;
+}
+.innert h3{
+    margin-right: 10px;
+    color: blue;
+}
+.innert h4{
+    color: blue;
+}
+.innerbiao{
+    display: flex;
+    height: 40px;
+}
+.innerbiao h2{
+    margin-right: 20px;
+    color: blue;
+}
+.innerbiao h4{
+    color: green;
+    line-height: 30px;
+}
+.inneri{
+    height: 40px;
+}
+
+
+.innerbut{
+    display: flex;
+    height: 105px;
+    margin-bottom: 10px;
+}
+.innerbut .mai{
+    width: 200px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+}
+.innerbut .mai{
     text-align: center;
 }
+.innerbut .mai p{
+    line-height: 20px;
+}
+
