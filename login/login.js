@@ -22,3 +22,13 @@ function setCookie_password(){
     var password = document.getElementById("password").value;
     document.cookie = "password="+password;
 }
+
+function setType1(){
+    var type = document.getElementById("cus").value;
+    document.cookie = "type="+type;
+}
+
+function setType2(){
+    var type = document.getElementById("pro").value;
+    document.cookie = "type="+type;
+}
