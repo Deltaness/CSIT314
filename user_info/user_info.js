@@ -35,7 +35,15 @@ function onLoad(){
             console.log(req.response);
             const json = JSON.parse(req.response);
             json_C = json;
-            // document.getElementById("userName").innerHTML=json.uid;
+            document.getElementById("userName").innerHTML=json_C.username;
+            document.getElementById("gender").innerHTML=json_C.gender;
+            document.getElementById("dob").innerHTML=json_C.dob;
+            document.getElementById("email").innerHTML=json_C.email;
+            document.getElementById("phone").innerHTML=json_C.phone;
+            document.getElementById("address").innerHTML=json_C.address;
+            document.getElementById("VIPstart").innerHTML=json_C.VIPstart;
+            document.getElementById("VIPend").innerHTML=json_C.VIPend;
+            document.getElementById("vehicleList").innerHTML=json_C.vehicleList;
         }
     }
 }
