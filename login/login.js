@@ -2,9 +2,7 @@ function login(){
     var cus = document.getElementById("cus");
     var pro = document.getElementById("pro");
     var identity;
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
-    setCookies(username,password);
+    
     if (cus.checked){
         identity = cus.value;
         window.open("../customer/customer.html",target="_self");
@@ -15,8 +13,12 @@ function login(){
     }
     
 }
-function setCookies(username,password){
+function setCookie_username(){
+    var username = document.getElementById("username").value;
     document.cookie = "username="+username;
+}
+
+function setCookie_password(){
+    var password = document.getElementById("password").value;
     document.cookie = "password="+password;
-    // window.alert("dsqwd"+document.cookie);
 }

@@ -18,8 +18,8 @@
             <div id="login">  
                 <h1>Login</h1>  
                 <form method="post">  
-                    <input id="username" class="inp" type="text" required="required" placeholder="Username" name="u"></input>  
-                    <input id="password" class="inp" type="password" required="required" placeholder="Password" name="p"></input>  
+                    <input id="username" class="inp" type="text" required="required" placeholder="Username" onblur="setCookie_username()" name="u"></input>  
+                    <input id="password" class="inp" type="password" required="required" placeholder="Password" onblur="setCookie_password()" name="p"></input>  
                     
                     <label for="dsa"><input class="radio" type="radio" id="cus" name="drone" value="customer" checked>Login As Customer</label>
                     
